@@ -1,0 +1,72 @@
+Goals:
+1. Use what they get
+2. Understand what they get
+
+Cover Caesar and Vigenere ciphers.
+-> Use openSSL to encrypt something and decrypt something
+-> Implement a Vignere Cipher 
+
+Total : 36 lectures
+2 sets of 
+Plan:
+1. Ciphers - 3 lectures
+	a. Intro and Stream Ciphers - 1 lecture
+	b. Block Ciphers - 1 lecture
+	c. Modes of Operation - 1 lecture
+2. Data Security - 5 lectures
+	a. Symmetric Encryption - 2 lectures
+	b. Assymetric Encryption + Public Key - 2-2.5 lectures
+	c. Hash functions - 0.5-1 lecture.
+3. Authentication including Access Control - 2 lectures
+	a. Authentication - 1 lecture
+	b. Access Control - 1 lecture
+4. Network Security - 8 lectures
+	a. Brief Review of Important things from 317 - 3 lectures
+		i. Networks, ASes and Virtual Networks - 1 lecture
+		ii. Firewalls - 1 lecture
+		iii. Intrusion Detection System - 1 lecture
+		(Links to important protocols like DHCP, ARP)
+	b. DNS stuff - 2 lectures
+		i. DNS Spoofing - 1 lecture
+		ii. DNS Rebinding Attack - 1 lecture
+	c. ARP Spoofing - 1 lecture
+	d. DOS - 1 lecture
+	e. DDOS - 1 lecture
+5. Web Security - 8 lectures
+	a. SQL Injections - 2 lectures
+	b. Cross-Site Scripting (XSS) - 2 lectures
+	c. Cross-Site Request Forgery (CSRF) - 2 lectures
+	d. Same Origin Policy - 2 lectures
+6. Code Integrity including Isolation - 3 lectures
+	a. Isolation - 1 lecture
+	b. Code Reuse - 1 lecture
+	c. Heap Spraying - 1 lecture
+7. Cloud Security - 3 lectures
+	a. Focus on Timing/Side Channel Attacks. Tradeoffs between security and cost. - 2 lectures
+	b. Virtualization - 1 lecture
+8. Mobile Security - 2 lectures
+	a. Android Security Model - 1 lecture
+	b. iOS Security Model - 1 lecture
+9. Presentations - 3 lectures
+10. Buffer - 1 lecture
+
+
+Assignments:
+
+Ciphers:
+1. Breaking the cipher Columnar Transposition Cipher. HINT: Give a word or tell them to use digraphs 
+2. Doing some other kind of encryption.
+3. Analyse the cipher for weaknesses.
+4. Steganography - Have as a bonus question
+
+Data Security:
+Symmetric Encryption
+1. ECB - Electronic Code Book. One block at a time and each block is done independently. Same thing maps to the same thing. So you lose integrity
+2. CBC - Cipher Block Chaining.
+Assymetric Encryption
+1. Signature Replays. - Validation of tokens. 
+Hash Functions
+2. Break MD5 with collision attack.
+
+Exploit-Exercises
+1. Modify the iso.
