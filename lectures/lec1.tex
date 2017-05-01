@@ -1,0 +1,113 @@
+\documentclass{beamer}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{hyperref}
+\usetheme{default}
+
+\newcommand{\fig}[2]{\includegraphics[width=1\textwidth]{#2}}
+\definecolor{red}{rgb}{1,0,0}
+\def\red#1{{\color{red}#1}}
+
+\title{Introduction and Stream Ciphers}
+
+\author{Vaastav Anand}
+
+\begin{document}
+
+\begin{frame}
+    \titlepage
+\end{frame}
+
+\AtBeginSection[]{
+    \begin{frame}
+        \tableofcontents[currentsection]
+    \end{frame}
+}
+
+\section{Introduction}
+
+\begin{frame}{Why Computer Security?}
+    \begin{itemize}
+        \item To be able to \textbf{protect} and \textbf{prevent} your system and code from malicious attacks.
+        \item To be able to \textbf{assess} systems and networks for security vulenrabilities.
+        \item To write \textbf{secure} code.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{A note about Security}
+    \begin{itemize}
+        \item In this course, you will be exposed to a lot of information about security vulenrabilities with computer systems and networks.
+        \item \red{You are not to use this or any other similar information to test the security of, break into, compromise, or otherwise attack, any system or network} without the express consent of the owner.
+        \item You will abide by the CS department's plagiarism policy that can be found here \url{https://my.cs.ubc.ca/docs/collaboration-plagiarism} 
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Grading Scheme}
+    \begin{itemize}
+        \item No final or midterm!
+        \item 80\% assignments (6)
+        \item 15\% presentation (1)
+        \item 5\% in-class participation
+    \end{itemize}
+\end{frame}
+
+\section{What is Computer Security?}
+
+\begin{frame}{What is Computer Security?}
+    \begin{itemize}
+        \item Security relates to computing or communicating in the presence of adversaries.
+        \item What is being prevented? What activities should be prevented or detected?
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Activity: World Wide Greed Bank}
+    \begin{itemize}
+        \item You work at World Wide Greed Bank and the bank has decided to install a safety deposit box service for its customers. You have been made in-charge to come up with policies implement this new service. What should your policies care about?
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Security Policies}
+    \begin{itemize}
+        \item Just like the bank, you have some information that you wish to protect and securely communicate with other people who need this information.
+        \item Security policies are basically the rules you want to enforce on your data/system/network.
+        \item \textbf{Confidentiality: } Information should not be disclosed to unauthorized parties
+        \item \textbf{Integrity : } Information should not be modified in an unauthorized manner
+        \item \textbf{Availability : } System or resource shall be available for use as intended.
+        \item Security Mechanisms are ways one enforces the security policies.
+    \end{itemize}
+\end{frame}
+
+\section{Ciphers}
+
+\begin{frame}{Ciphers}
+    \begin{itemize}
+        \item \textbf{Encryption : } Process of encoding a message so that only the authorized parties can read and understand it.
+        \item \textbf{Decryption : } Process of decoding an encoded message in order to obtain the original message.
+        \item \textbf{Cipher : } An algorithm for performing an encryption or decryption.
+        \item The whole operation of the encryption process is dependent on the \textbf{key}. This is just a piece of information without which it must be extremely difficult, if not impossible, to decode the message.
+        \item \textbf{Plaintext : } Un-encrypted information.
+        \item \textbf{Ciphertext : } Encrypted information.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Types of Ciphers}
+    \begin{itemize}
+        \item Based on the type of Input Data:
+            \begin{itemize}
+                \item \textbf{Stream Ciphers} : Encrypt continuous streams of data
+                \item \textbf{Block Ciphers} : Encrypt block of data of fixed size 
+            \end{itemize}
+        \item Based on the type of key used:
+                \begin{itemize}
+                    \item \textbf{Symmetric Key Algorithms} : Same key is used for both encryption and decryption
+                    \item \textbf{Asymmetric Key Algorithms} : Differents keys are used for encryption and decryption
+                \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Stream Ciphers}
+
+\end{frame}
+
+\end{document}
